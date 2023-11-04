@@ -1,13 +1,16 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/* Add this CSS to your stylesheet */
+.disabled-link {
+  pointer-events: none;
+  cursor: not-allowed;
+  color: gray; /* You can choose a suitable color */
+}
+@media (max-width: 740px) {
+  .slider {
+    width: 90%; /* Adjust the width as needed for 740px screens */
+    margin: 0 auto; /* Center the slider horizontally on the screen */
+  }
 }
